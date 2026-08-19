@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPulse — Event Organizer & Host Portal</title>
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <script>
+        // Redirect helper
+        document.addEventListener('DOMContentLoaded', () => {
+            const auth = JSON.parse(localStorage.getItem('campuspulse_host_auth'));
+            if (auth && auth.isLoggedIn) {
+                window.location.href = 'frontend/host/dashboard.html';
+            } else {
+                window.location.href = 'frontend/host/login.html';
+            }
+        });
+    </script>
+</head>
+<body style="background:#0f172a; color:#fff; display:flex; align-items:center; justify-content:center; min-height:100vh;">
+    <div style="text-align:center;">
+        <div class="brand-icon" style="margin: 0 auto 1rem; width: 60px; height: 60px; font-size: 1.8rem;">CP</div>
+        <h2 style="font-family: 'Outfit', sans-serif;">CampusPulse</h2>
+        <p style="color: #94a3b8;">Redirecting to Host Portal...</p>
+    </div>
+</body>
+</html>
