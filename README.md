@@ -1,2 +1,3 @@
 # Event_Tracker_RSVP
-Event organizer 
+
+CampusPulse is a lightweight college event management platform designed to centralize all internal college events in one place. It allows students to discover upcoming events, view event details, track event countdowns, and register easily. Registered students receive a digital entry pass with a QR code for event attendance verification. Event organizers can create and manage events, registrations, and attendance, while Admins can monitor and manage the overall platform. The system is developed using React.js, Flask, and SQL to provide a simple, efficient, and user-friendly event management experience.
